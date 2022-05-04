@@ -26,7 +26,7 @@ const check = function (text) {
 };
 document.querySelector('.check').style.display = 'block';
 document.querySelector('.again').style.display = 'none';
-document.querySelector('.number').textContent = secretNumber;
+// document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
 
@@ -92,7 +92,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 100) + 1;
-  number(`${secretNumber}`);
+  number(`?`);
   body('#222');
   displayMessage(`Počni pogađati...`);
   document.querySelector('.guess').value = '';
