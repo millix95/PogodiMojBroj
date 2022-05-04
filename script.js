@@ -24,6 +24,8 @@ const again = function (text) {
 const check = function (text) {
   document.querySelector('.check').textContent = text;
 };
+document.querySelector('.check').style.display = 'flex';
+document.querySelector('.again').style.display = 'none';
 // document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
@@ -34,6 +36,10 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > hScore) {
       hScore = score;
     }
+    document.querySelector('.guess').style.position = 'relative';
+    document.querySelector('.guess').style.top = '-28px';
+    document.querySelector('.check').style.display = 'none';
+    document.querySelector('.again').style.display = 'flex';
     displayMessage(`Tačan broj!`);
     number(secretNumber);
     body('#60b347');
@@ -94,6 +100,9 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
   scorejs(50);
   score = 50;
+  document.querySelector('.check').style.display = 'flex';
+  document.querySelector('.again').style.display = 'none';
+  document.querySelector('.guess').style.top = '0px';
   // console.log(secretNumber, typeof secretNumber);
 });
 // console.log(secretNumber, typeof secretNumber);

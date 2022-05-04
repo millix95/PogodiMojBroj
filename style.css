@@ -79,7 +79,7 @@ h1 {
 
 .again {
   position: absolute;
-  top: 2rem;
+  top: 77rem;
   left: 2rem;
 }
 
@@ -145,18 +145,18 @@ h1 {
   .message {
     font-size: 4vw;
     margin-right: 10px;
-    top: 15px;
+    top: 5px;
     position: relative;
   }
   .label-score {
     position: relative;
-    top: 20px;
+    top: 15px;
     font-size: 4vw;
     margin-right: 10px;
   }
   .label-highscore {
     position: relative;
-    top: 20px;
+    top: 15px;
     font-size: 4vw;
     margin-right: 10px;
   }
