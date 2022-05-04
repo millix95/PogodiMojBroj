@@ -25,13 +25,13 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     displayMessage(`🔴 Nema broja!`);
   } else if (guess === secretNumber) {
+    if (score > hScore) {
+      hScore = score;
+    }
     displayMessage(`🟢 Tačan broj!`);
     number(secretNumber);
     body('#60b347');
     highScore(hScore);
-    if (score > hScore) {
-      hScore = score;
-    }
   } else if (-3 <= secretNumber - guess && secretNumber - guess <= 3) {
     if (score > 1) {
       displayMessage(`🌞 Vruće!`);
