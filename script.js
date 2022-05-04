@@ -24,9 +24,9 @@ const again = function (text) {
 const check = function (text) {
   document.querySelector('.check').textContent = text;
 };
-document.querySelector('.check').style.display = 'flex';
+document.querySelector('.check').style.display = 'block';
 document.querySelector('.again').style.display = 'none';
-// document.querySelector('.number').textContent = secretNumber;
+document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
 
@@ -36,10 +36,8 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > hScore) {
       hScore = score;
     }
-    document.querySelector('.guess').style.position = 'relative';
-    document.querySelector('.guess').style.top = '-28px';
     document.querySelector('.check').style.display = 'none';
-    document.querySelector('.again').style.display = 'flex';
+    document.querySelector('.again').style.display = 'block';
     displayMessage(`Tačan broj!`);
     number(secretNumber);
     body('#60b347');
@@ -94,9 +92,9 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 100) + 1;
-  number(`?`);
+  number(`${secretNumber}`);
   body('#222');
-  displayMessage(`Start guessing...`);
+  displayMessage(`Počni pogađati...`);
   document.querySelector('.guess').value = '';
   scorejs(50);
   score = 50;

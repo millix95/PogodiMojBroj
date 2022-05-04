@@ -78,9 +78,9 @@ h1 {
 }
 
 .again {
-  position: absolute;
-  top: 77rem;
-  left: 2rem;
+  position: relative;
+  width: 220px;
+  background-color: red;
 }
 
 .guess {
@@ -114,6 +114,7 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 3rem;
+  line-height: 20px;
 }
 
 .label-score {
