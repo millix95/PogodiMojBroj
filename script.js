@@ -18,6 +18,12 @@ const highScore = function (hscore) {
 const scorejs = function (score) {
   document.querySelector('.score').textContent = score;
 };
+const again = function (text) {
+  document.querySelector('.again').textContent = text;
+};
+const check = function (text) {
+  document.querySelector('.check').textContent = text;
+};
 // document.querySelector('.number').textContent = secretNumber;
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
