@@ -120,9 +120,20 @@ h1 {
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 480px) {
+  header {
+    height: 40vh;
+  }
   h1 {
     line-height: 5vh;
     font-size: 10vw;
+  }
+  .left {
+    position: relative;
+    top: 100px;
+  }
+  .right {
+    position: relative;
+    top: 100px;
   }
   .between {
     top: 24rem;
