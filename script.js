@@ -23,58 +23,58 @@ document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
 
   if (!guess) {
-    displayMessage(`🔴 Nema broja!`);
+    displayMessage(`Nema broja!`);
   } else if (guess === secretNumber) {
     if (score > hScore) {
       hScore = score;
     }
-    displayMessage(`🟢 Tačan broj!`);
+    displayMessage(`Tačan broj!`);
     number(secretNumber);
     body('#60b347');
     highScore(hScore);
   } else if (-3 <= secretNumber - guess && secretNumber - guess <= 3) {
     if (score > 1) {
-      displayMessage(`🌞 Vruće!`);
+      displayMessage(`Vruće!`);
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      message(`💥 Kraj igre! Osvojili ste ${hScore} bodova!`);
+      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else if (-10 <= secretNumber - guess && secretNumber - guess <= 10) {
     if (score > 1) {
-      displayMessage(`🌞 Toplo!`);
+      displayMessage(`Toplo!`);
       score--;
       scorejs(score);
     } else {
-      message(`💥 Kraj igre! Osvojili ste ${hScore} bodova!`);
+      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else if (-25 <= secretNumber - guess && secretNumber - guess <= 25) {
     if (score > 1) {
-      displayMessage(`❄️ Hladno!`);
+      displayMessage(`Hladno!`);
       score--;
       scorejs(score);
     } else {
-      message(`💥 Kraj igre! Osvojili ste ${hScore} bodova!`);
+      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else if (-50 <= secretNumber - guess && secretNumber - guess <= 50) {
     if (score > 1) {
-      displayMessage(`⛄ Debeli minus!`);
+      displayMessage(`Debeli minus!`);
       score--;
       scorejs(score);
     } else {
-      message(`💥 Kraj igre! Osvojili ste ${hScore} bodova!`);
+      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else {
     if (score > 1) {
-      displayMessage(`🥶 Ledeno doba!`);
+      displayMessage(`Ledeno doba!`);
       score--;
       scorejs(score);
     } else {
-      message(`💥 Kraj igre! Osvojili ste ${hScore} bodova!`);
+      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   }
@@ -82,7 +82,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 100) + 1;
-  number('?');
+  number(`?`);
   body('#222');
   displayMessage(`Start guessing...`);
   document.querySelector('.guess').value = '';
