@@ -148,20 +148,23 @@ h1 {
   width: 100%;
 }
 .pravila-p {
-  width: 100%;
+  text-align: justify;
+  width: 60%;
   line-height: 25px;
   font-size: 1rem;
   color: #ddd;
-  text-transform: uppercase;
   box-sizing: border-box;
   padding: 50px;
 }
 .pravila-span {
   color: rgb(84, 172, 255);
 }
+.smjernice {
+  text-decoration: underline;
+}
 .pravila-dugme {
   font-family: 'Press Start 2P', sans-serif;
-  width: 30vw;
+  width: 165px;
   border-radius: 10px;
   height: 40px;
   font-size: 2rem;
@@ -187,6 +190,10 @@ h1 {
   .right {
     position: relative;
     top: 100px;
+  }
+  .pravila-p {
+    padding: 25px;
+    width: 100%;
   }
   .message {
     font-size: 4vw;
