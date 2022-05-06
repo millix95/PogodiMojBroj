@@ -6,31 +6,8 @@ let hScore = 0;
 const igra = document.querySelector('.igra');
 const pravila = document.querySelector('.pravila');
 const pravilaDugme = document.querySelector('.pravila-dugme');
-const displayMessage = function (message) {
-  document.querySelector('.message').textContent = message;
-};
-const number = function (number) {
-  document.querySelector('.number').textContent = number;
-};
-const body = function (color) {
-  document.querySelector('body').style.backgroundColor = color;
-};
-const highScore = function (hscore) {
-  document.querySelector('.highscore').textContent = hscore;
-};
-const scorejs = function (score) {
-  document.querySelector('.score').textContent = score;
-};
-const again = function (text) {
-  document.querySelector('.again').textContent = text;
-};
-const check = function (text) {
-  document.querySelector('.check').textContent = text;
-};
-document.querySelector('.check').style.display = 'block';
-document.querySelector('.again').style.display = 'none';
-// document.querySelector('.number').textContent = secretNumber;
-document.querySelector('.check').addEventListener('click', function () {
+const provera = document.querySelector('.guess');
+const proveraF = function () {
   let guess = Number(document.querySelector('.guess').value);
 
   if (!guess) {
@@ -91,7 +68,32 @@ document.querySelector('.check').addEventListener('click', function () {
       scorejs(0);
     }
   }
-});
+};
+const displayMessage = function (message) {
+  document.querySelector('.message').textContent = message;
+};
+const number = function (number) {
+  document.querySelector('.number').textContent = number;
+};
+const body = function (color) {
+  document.querySelector('body').style.backgroundColor = color;
+};
+const highScore = function (hscore) {
+  document.querySelector('.highscore').textContent = hscore;
+};
+const scorejs = function (score) {
+  document.querySelector('.score').textContent = score;
+};
+const again = function (text) {
+  document.querySelector('.again').textContent = text;
+};
+const check = function (text) {
+  document.querySelector('.check').textContent = text;
+};
+document.querySelector('.check').style.display = 'block';
+document.querySelector('.again').style.display = 'none';
+// document.querySelector('.number').textContent = secretNumber;
+document.querySelector('.check').addEventListener('click', proveraF);
 
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 100) + 1;
@@ -110,4 +112,9 @@ document.querySelector('.again').addEventListener('click', function () {
 pravilaDugme.addEventListener('click', function () {
   igra.classList.remove('skriveno');
   pravila.classList.add('skriveno');
+});
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' && provera === document.activeElement) {
+    proveraF();
+  }
 });
