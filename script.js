@@ -1,7 +1,7 @@
 'use strict';
 
 let secretNumber = Math.trunc(Math.random() * 100) + 1;
-let score = 50;
+let score = 15;
 let hScore = 0;
 const igra = document.querySelector('.igra');
 const pravila = document.querySelector('.pravila');
@@ -99,8 +99,8 @@ document.querySelector('.again').addEventListener('click', function () {
   body('#222');
   displayMessage(`Počni pogađati...`);
   document.querySelector('.guess').value = '';
-  scorejs(50);
-  score = 50;
+  scorejs(15);
+  score = 15;
   document.querySelector('.check').style.display = 'flex';
   document.querySelector('.again').style.display = 'none';
   document.querySelector('.guess').style.top = '0px';
