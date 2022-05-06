@@ -3,6 +3,9 @@
 let secretNumber = Math.trunc(Math.random() * 100) + 1;
 let score = 50;
 let hScore = 0;
+const igra = document.querySelector('.igra');
+const pravila = document.querySelector('.pravila');
+const pravilaDugme = document.querySelector('.pravila-dugme');
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
@@ -104,3 +107,7 @@ document.querySelector('.again').addEventListener('click', function () {
   // console.log(secretNumber, typeof secretNumber);
 });
 // console.log(secretNumber, typeof secretNumber);
+pravilaDugme.addEventListener('click', function () {
+  igra.classList.remove('skriveno');
+  pravila.classList.add('skriveno');
+});

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Press Start 2P', sans-serif;
+        color: #eee;
+        background-color: #222;
+        /* background-color: #60b347; */
+      }
+      .pravila-h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        color: red;
+      }
+      .pravila {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        align-items: center;
+        justify-items: center;
+        background-color: #333;
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .pravila-p {
+        line-height: 25px;
+        font-size: 1rem;
+        color: #ddd;
+        text-transform: uppercase;
+      }
+      .pravila-span {
+        color: red;
+      }
+      .pravila-dugme {
+        width: 25vw;
+        height: 40px;
+        font-size: 3rem;
+        background-color: #222;
+        border: 0;
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="pravila">
+      <h1 class="pravila-h1">Pravila igre</h1>
+      <p class="pravila-p">
+        Pravila igre su jednostavna!
+        <br /><br />
+        Sve što trebate da uradite jeste da pogodite moj zamišljeni broj!
+        <br /><br />
+        Tokom igre pomoći ću Vam tako što ću Vas navoditi sa smjernicama.
+        <br /><br />
+        Smjernice su sledeće: <br />
+        1. <span class="pravila-span">LEDENO DOBA</span> - Traženi broj je veći
+        ili manji za više od 50 brojeva od vašeg
+        <br />
+        2. <span class="pravila-span"></span>>DEBELI MINUS</span> - Traženi broj je udaljen između 25 i 50
+        brojeva od vašeg
+        <br />
+        3. <span class="pravila-span"></span>>HLADNO</span> - Traženi broj je udaljen između 10 i 25 brojeva
+        od vašeg
+        <br />
+        4. <span class="pravila-span"></span>>TOPLO</span> - Traženi broj je udaljen između 3 i 10 brojeva od
+        vašeg
+        <br />
+        5. <span class="pravila-span">>VRUĆE</span> - Traženi broj je veći ili manji za 3 broja od
+        vašeg
+      </p>
+      <button class="pravila-dugme">Dalje</button>
+    </section>
+  </body>
+</html>
