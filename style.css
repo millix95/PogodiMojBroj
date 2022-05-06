@@ -185,11 +185,11 @@ h1 {
   }
   .left {
     position: relative;
-    top: 100px;
+    /* top: 100px; */
   }
   .right {
     position: relative;
-    top: 100px;
+    /* top: 100px; */
   }
   .pravila-p {
     padding: 25px;
