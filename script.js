@@ -51,7 +51,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
+      displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else if (-10 <= secretNumber - guess && secretNumber - guess <= 10) {
@@ -60,7 +60,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       scorejs(score);
     } else {
-      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
+      displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else if (-25 <= secretNumber - guess && secretNumber - guess <= 25) {
@@ -69,7 +69,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       scorejs(score);
     } else {
-      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
+      displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else if (-50 <= secretNumber - guess && secretNumber - guess <= 50) {
@@ -78,7 +78,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       scorejs(score);
     } else {
-      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
+      displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   } else {
@@ -87,7 +87,7 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       scorejs(score);
     } else {
-      message(`Kraj igre! Osvojili ste ${hScore} bodova!`);
+      displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       scorejs(0);
     }
   }
