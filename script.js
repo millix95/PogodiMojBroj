@@ -62,6 +62,8 @@ const proveraF = function () {
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
+      document.querySelector('.check').style.display = 'none';
+      document.querySelector('.again').style.display = 'block';
       scorejs(0);
     }
   } else if (-10 <= secretNumber - guess && secretNumber - guess <= 10) {
@@ -76,6 +78,8 @@ const proveraF = function () {
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
+      document.querySelector('.check').style.display = 'none';
+      document.querySelector('.again').style.display = 'block';
       scorejs(0);
     }
   } else if (-25 <= secretNumber - guess && secretNumber - guess <= 25) {
@@ -90,6 +94,8 @@ const proveraF = function () {
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
+      document.querySelector('.check').style.display = 'none';
+      document.querySelector('.again').style.display = 'block';
       scorejs(0);
     }
   } else if (-50 <= secretNumber - guess && secretNumber - guess <= 50) {
@@ -104,6 +110,8 @@ const proveraF = function () {
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
+      document.querySelector('.check').style.display = 'none';
+      document.querySelector('.again').style.display = 'block';
       scorejs(0);
     }
   } else {
@@ -118,6 +126,8 @@ const proveraF = function () {
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
+      document.querySelector('.check').style.display = 'none';
+      document.querySelector('.again').style.display = 'block';
       scorejs(0);
     }
   }
