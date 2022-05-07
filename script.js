@@ -137,7 +137,7 @@ document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 100) + 1;
   let guess2 = document.querySelector('.guess');
   number(`?`);
-  body('#222');
+  body('#000');
   displayMessage(`Počni pogađati...`);
   document.querySelector('.guess').value = '';
   scorejs(15);
