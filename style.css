@@ -175,7 +175,7 @@ h1 {
   margin-bottom: 75px;
 }
 /* pravila igre */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 501px) {
   header {
     height: 40vh;
   }
@@ -192,7 +192,7 @@ h1 {
     /* top: 100px; */
   }
   .pravila-p {
-    padding: 25px;
+    /* padding: 25px; */
     width: 100%;
   }
   .message {
