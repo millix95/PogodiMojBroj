@@ -155,7 +155,7 @@ document.querySelector('.again').addEventListener('click', function () {
 // console.log(secretNumber, typeof secretNumber);
 pravilaDugme.addEventListener('click', function () {
   igra.classList.remove('skriveno');
-  pravila.classList.add('skriveno');
+  pravila.style.display = 'none';
 });
 document.addEventListener('keydown', function (e) {
   let provera = document.querySelector('.guess');

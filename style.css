@@ -22,8 +22,8 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 35vh;
-  border-bottom: 7px solid #eee;
+  height: 39vh;
+  border-bottom: 1vh solid #eee;
   width: 100%;
 }
 
@@ -179,7 +179,7 @@ h1 {
 /* pravila igre */
 @media screen and (max-width: 501px) {
   header {
-    height: 40vh;
+    height: 39vh;
   }
   h1 {
     line-height: 6vh;
