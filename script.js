@@ -58,7 +58,7 @@ const proveraF = function () {
       number(guess);
       document.querySelector('.number').style.color = '#80CED7';
       document.querySelector('.number').style.backgroundColor = '#003249';
-      document.querySelector('.message').style.color = '#003249';
+      document.querySelector('.message').style.color = '#CCDBDC';
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
@@ -72,7 +72,7 @@ const proveraF = function () {
       number(guess);
       document.querySelector('.number').style.color = '#9AD1D4';
       document.querySelector('.number').style.backgroundColor = '#007EA7';
-      document.querySelector('.message').style.color = '#007EA7';
+      document.querySelector('.message').style.color = '#CCDBDC';
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
@@ -86,7 +86,7 @@ const proveraF = function () {
       number(guess);
       document.querySelector('.number').style.color = '#CCDBDC';
       document.querySelector('.number').style.backgroundColor = '#80CED7';
-      document.querySelector('.message').style.color = '#60b80CED7347';
+      document.querySelector('.message').style.color = '#CCDBDC';
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
@@ -100,7 +100,7 @@ const proveraF = function () {
       number(guess);
       document.querySelector('.number').style.color = '#003249';
       document.querySelector('.number').style.backgroundColor = '#9AD1D4';
-      document.querySelector('.message').style.color = '#9AD1D4';
+      document.querySelector('.message').style.color = '#CCDBDC';
     } else {
       displayMessage(`Kraj igre! Osvojili ste ${hScore} bodova!`);
       document.querySelector('.message').style.color = '#F00';
